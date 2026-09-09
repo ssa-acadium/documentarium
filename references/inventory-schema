@@ -1,0 +1,62 @@
+# Inventory Schema
+
+Copy these tables into LANDSCAPE.md. One row per item. `Evidence` is mandatory.
+
+## Frontend
+| Item | Value | Version | Evidence |
+|---|---|---|---|
+| Framework | | | package.json |
+| Language | | | |
+| Build tool | | | |
+| Router + routes | | | |
+| State management | | | |
+| Styling approach | | | |
+| Rendering mode | SPA / SSR / SSG / hybrid | | |
+
+## Edge and network
+| Item | Value | Evidence |
+|---|---|---|
+| DNS / domains | | dig output |
+| CDN | | response headers |
+| Reverse proxy | | Server header |
+| WAF | | |
+| Caching rules | | Cache-Control |
+| TLS termination | | |
+
+## API surface
+| Endpoint / operation | Method | Auth | Version | Evidence |
+|---|---|---|---|---|
+| | | | | |
+
+## Backend services
+| Service | Runtime | Version | Responsibility | Evidence |
+|---|---|---|---|---|
+| | | | | |
+
+Also record: background jobs, cron schedules, queue consumers, scheduled tasks.
+
+## Data
+| Store | Type | Engine + version | Purpose | Evidence |
+|---|---|---|---|---|
+| | primary / cache / queue / blob / search | | | |
+
+## Third-party services
+| Provider | Purpose | Where initialised | Evidence |
+|---|---|---|---|
+| | payments / email / auth / analytics / feature flags | | |
+
+## Ops and delivery
+| Item | Value | Evidence |
+|---|---|---|
+| IaC tool + repo location | | |
+| Orchestration | | |
+| CI pipeline | | |
+| Deploy target + regions | | |
+| Environments | | |
+| Secrets manager | | |
+| Observability | | |
+
+## Notes and Oddities
+| Observation | Tag | Evidence |
+|---|---|---|
+| | structural / stylistic / broken | |
