@@ -4,7 +4,6 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Agent Skills](https://img.shields.io/badge/format-Agent_Skills-blue)](https://agentskills.io/specification)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 **TL;DR** — Point it at a repo or staging site you've just got access to. It maps
 before it reads, traces one request end to end, and hands you a `LANDSCAPE.md`
