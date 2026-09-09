@@ -18,7 +18,7 @@ allowed-tools:
 effort: high
 ---
 
-# System Landscape
+# Documentarium
 
 Build a complete, verifiable inventory of a web environment. The deliverable is
 a single markdown document, `LANDSCAPE.md`, that the next person could onboard from.
