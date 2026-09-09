@@ -1,12 +1,6 @@
 # documentarium
 
-Here's a README built to current GitHub best practices: badge row, scannable TL;DR up top, install instructions per agent, copy-paste examples, contributing, and a license note.
-
 ## system-landscape
-
-> Give an AI coding agent a methodology for cataloguing an unfamiliar web
-> environment: frontend, edge, API, backend, data stores, third-party services
-> and ops, into one written landscape document.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Agent Skills](https://img.shields.io/badge/format-Agent_Skills-blue)](https://agentskills.io/specification)
