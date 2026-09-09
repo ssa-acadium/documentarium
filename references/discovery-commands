@@ -1,0 +1,29 @@
+# Discovery Commands
+
+Non-destructive. Read-only. Never run against production without explicit approval.
+
+## Repo shape
+find . -maxdepth 2 -type d -not -path '*/node_modules/*' -not -path '*/.git/*'
+find . -name 'package.json' -not -path '*/node_modules/*'
+find . \( -name 'Dockerfile*' -o -name '*.tf' -o -name 'docker-compose*.yml' \
+   -o -name '*.yaml' -path '*k8s*' \) -not -path '*/node_modules/*'
+
+## Versions
+cat package.json | grep -A50 '"dependencies"'
+grep -E '^(python|node|ruby|go|rust)' .tool-versions .nvmrc .python-version 2>/dev/null
+cat go.mod requirements.txt Gemfile 2>/dev/null
+
+## API surface
+find . -iname '*openapi*' -o -iname '*swagger*' -o -iname 'schema.graphql'
+grep -rEn '(app|router)\.(get|post|put|patch|delete)\(' --include='*.ts' --include='*.js' \
+  --include='*.py' --include='*.go' .
+
+## Services and async work
+grep -rEn '(cron|schedule|worker|consumer|handler)\(' --exclude-dir=node_modules .
+grep -rEn 'process\.env\.|config\.[a-z_]+_url' --exclude-dir=node_modules . | head -50
+
+## Live site, when you only have a URL
+curl -sI https://target.example.com
+dig +short target.example.com A CNAME NS
+curl -s https://target.example.com/robots.txt
+curl -s https://target.example.com/.well-known/security.txt
