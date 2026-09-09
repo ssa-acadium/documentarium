@@ -1,6 +1,6 @@
 # documentarium
 
-## system-landscape
+## documentarium
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Agent Skills](https://img.shields.io/badge/format-Agent_Skills-blue)](https://agentskills.io/specification)
@@ -24,7 +24,7 @@ verify, and you'll build on top of confident guesses.
 
 ## What this does
 
-`system-landscape` is an [Agent Skill](https://agentskills.io/specification) that
+`documentarium` is an [Agent Skill](https://agentskills.io/specification) that
 imposes a six-phase discovery loop on the agent and makes it produce a verifiable
 artifact instead of a vibes-based summary.
 
@@ -50,8 +50,8 @@ nice formatting.
 Skills are plain files. Clone and copy into whichever agent you use.
 
 ```bash
-git clone https://github.com/acadium/system-landscape.git
-cd system-landscape
+git clone https://github.com/acadium/documentarium.git
+cd documentarium
 ```
 
 <details>
@@ -59,8 +59,8 @@ cd system-landscape
 
 ```bash
 mkdir -p ~/.claude/skills
-cp -r system-landscape ~/.claude/skills/
-head ~/.claude/skills/system-landscape/SKILL.md   # verify it loaded
+cp -r documentarium ~/.claude/skills/
+head ~/.claude/skills/documentarium/SKILL.md   # verify it loaded
 ```
 </details>
 
@@ -69,7 +69,7 @@ head ~/.claude/skills/system-landscape/SKILL.md   # verify it loaded
 
 ```bash
 mkdir -p .github/skills
-cp -r system-landscape .github/skills/
+cp -r documentarium .github/skills/
 ```
 </details>
 
@@ -77,7 +77,7 @@ cp -r system-landscape .github/skills/
 <summary><b>OpenAI Codex CLI</b></summary>
 
 ```bash
-cp -r system-landscape ~/.codex/skills/
+cp -r documentarium ~/.codex/skills/
 ```
 
 Restart Codex to pick it up.
@@ -86,7 +86,7 @@ Restart Codex to pick it up.
 <details>
 <summary><b>Cursor / Windsurf / Gemini CLI</b></summary>
 
-Copy `system-landscape/` into the agent's skills directory. Fields outside
+Copy `documentarium/` into the agent's skills directory. Fields outside
 `name`, `description` and the markdown body are ignored, not errors.
 </details>
 
@@ -100,7 +100,7 @@ Map it.
 Or invoke explicitly:
 
 ```text
-Use the system-landscape skill to inventory ./api-gateway and ./web-client.
+Use the documentarium skill to inventory ./api-gateway and ./web-client.
 ```
 
 ### Expected output
@@ -119,7 +119,7 @@ LANDSCAPE.md
 ## Repository layout
 
 ```text
-system-landscape/
+documentarium/
 ├── SKILL.md                        # methodology + phase instructions
 ├── references/
 │   ├── inventory-schema.md         # copy-paste tables, Evidence column mandatory
@@ -192,4 +192,4 @@ A README promises these, so they should exist.
 
 **`.github/ISSUE_TEMPLATE/`** — two templates: `schema-gap.md` for a layer the inventory misses, and `false-positive.md` for a claim the Evidence column couldn't support. The second one is how you find out where the methodology is lying to people.
 
-Two things I invented that you should confirm or correct: the repo URL (`acadium/system-landscape`) and the MIT license choice. Also, if `acadium/skillwright` defines extra frontmatter fields or ships a validator, I'd want to run the skill through it before publishing.
+Two things I invented that you should confirm or correct: the repo URL (`acadium/documentarium`) and the MIT license choice. Also, if `acadium/skillwright` defines extra frontmatter fields or ships a validator, I'd want to run the skill through it before publishing.
