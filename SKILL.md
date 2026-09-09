@@ -1,5 +1,5 @@
 ---
-name: system-landscape
+name: documentarium
 description: Catalogues an unfamiliar web environment end to end - frontend,
   edge, API, backend, data, third-party services and ops - into a written
   landscape document. Use when given access to a new site, repo or client
