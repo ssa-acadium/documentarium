@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/documentarium-logo.png" alt="documentarium" width="200">
+  <img src="assets/documentarium-logo.png" alt="documentarium" width="300">
 </div>
 
 # documentarium
