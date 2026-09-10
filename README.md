@@ -1,6 +1,8 @@
-# documentarium
+<div align="center">
+  <img src="assets/cdocumentarium-logo.png" alt="Codesmith" width="200">
+</div>
 
-## documentarium
+# documentarium
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Agent Skills](https://img.shields.io/badge/format-Agent_Skills-blue)](https://agentskills.io/specification)
@@ -177,18 +179,3 @@ data pipelines, add a table to `references/inventory-schema.md` with the standar
 ## License
 
 MIT — see [LICENSE](LICENSE).
-```
-
-## Companion files worth committing
-
-A README promises these, so they should exist.
-
-**`CONTRIBUTING.md`** — keep it short: fork and branch, one phase or one schema table per PR, include a worked example when changing the schema, and note which agent you tested against.
-
-**`LICENSE`** — MIT, with your name and year.
-
-**`examples/LANDSCAPE.example.md`** — this is the highest-leverage file after `SKILL.md`. A real reviewer decides whether to use a skill by reading one output sample, not by reading the instructions.
-
-**`.github/ISSUE_TEMPLATE/`** — two templates: `schema-gap.md` for a layer the inventory misses, and `false-positive.md` for a claim the Evidence column couldn't support. The second one is how you find out where the methodology is lying to people.
-
-Two things I invented that you should confirm or correct: the repo URL (`acadium/documentarium`) and the MIT license choice. Also, if `acadium/skillwright` defines extra frontmatter fields or ships a validator, I'd want to run the skill through it before publishing.
